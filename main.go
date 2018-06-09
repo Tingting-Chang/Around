@@ -69,7 +69,7 @@ func main() {
 	http.HandleFunc("/post", handlerPost)
 	http.HandleFunc("/search", handlerSearch)
 
-	log.Fatal(http.ListenAndServe(":8089", nil))
+	log.Fatal(http.ListenAndServe(":8080", nil))
 }
 
 func handlerPost(w http.ResponseWriter, r *http.Request) {
