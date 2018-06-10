@@ -11,7 +11,7 @@ import (
 	"github.com/pborman/uuid"
 	"cloud.google.com/go/storage"
 	"context"
-
+	"io"
 )
 
 
@@ -184,7 +184,7 @@ func saveToGCS(ctx context.Context, r io.Reader, bucketName, name string) (*stor
       fmt.Printf("Post is saved to GCS: %s\n", attrs.MediaLink)
       return obj, attrs, err
 }
-
+	
 
 
 // Save a post to ElasticSearch
