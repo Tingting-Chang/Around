@@ -2,14 +2,12 @@ package main
 
 import (
       elastic "gopkg.in/olivere/elastic.v3"
-
       "encoding/json"
       "fmt"
       "net/http"
       "reflect"
       "regexp"
       "time"
-
       "github.com/dgrijalva/jwt-go"
 )
 
